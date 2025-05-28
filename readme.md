@@ -245,7 +245,7 @@ docker run --gpus all --rm \
 ```
 
 ### Run Performance Benchmarks
-
+```
 # GPU configurations (Full Model)
 perf_analyzer -u triton_server:8000 \
   -m chest_xray_detector \
@@ -263,20 +263,6 @@ perf_analyzer -u triton_server:8000 \
 
 ---
 
-## 📁 Repository Structure
-
-```
-├── compiled.txt                    # Performance benchmark results
-├── custom1_tensorRT.pbtxt         # TensorRT config with batching
-├── custom2_tensorRT.pbtxt         # TensorRT config V2 (best performance)  
-├── custom_onnx.pbtxt              # ONNX GPU configuration
-├── nano_custom_onnx.pbtxt         # OpenVINO Nano configuration
-├── openvino.pbtxt                 # OpenVINO standard configuration
-├── yolo_default_onnx.pbtxt        # Default ONNX baseline
-└── yolo_default_tensorRT.pbtxt    # Default TensorRT baseline
-```
-
----
 
 ## 🎯 Key Optimization Insights
 
@@ -386,12 +372,6 @@ We welcome contributions to improve performance benchmarks and add new backend c
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
 ## 🙏 Acknowledgments
 
 - **NVIDIA Triton Inference Server** team for the robust serving platform
@@ -403,7 +383,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 <div align="center">
 
-**Built with ❤️ for high-performance medical AI deployment**
+**Built with ❤️ for high-performance model deployment**
 
 [Report Bug](../../issues) · [Request Feature](../../issues) · [Documentation](../../wiki)
 

@@ -1,5 +1,4 @@
-# Triton Inference Server Performance Optimization
-## High-Performance Medical AI Model Deployment
+# Triton Inference Configurations for YOLO V12
 
 [![Triton](https://img.shields.io/badge/NVIDIA-Triton-76B900?style=for-the-badge&logo=nvidia)](https://github.com/triton-inference-server/server)
 [![TensorRT](https://img.shields.io/badge/TensorRT-Accelerated-00D2FF?style=for-the-badge&logo=nvidia)](https://developer.nvidia.com/tensorrt)

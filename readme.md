@@ -6,13 +6,12 @@
 [![ONNX](https://img.shields.io/badge/ONNX-Runtime-005CED?style=for-the-badge&logo=onnx)](https://onnxruntime.ai/)
 [![OpenVINO](https://img.shields.io/badge/Intel-OpenVINO-0071C5?style=for-the-badge&logo=intel)](https://docs.openvino.ai/)
 
-This repository contains a comprehensive performance optimization study for deploying a **chest X-ray detection model** using NVIDIA Triton Inference Server. We benchmark multiple inference backends and configurations to achieve optimal throughput and latency for medical AI applications.
+This repository contains a collection of example Triton config files for deploying a **YOLO model** using NVIDIA Triton Inference Server. 
 
 ---
 
 ## 🚀 Performance Results Overview
 
-Our optimization journey achieved remarkable performance improvements through systematic backend comparison and configuration tuning:
 
 ### 🏆 Performance Hierarchy
 
@@ -32,7 +31,7 @@ Our optimization journey achieved remarkable performance improvements through sy
 | OpenVINO V1 | 0.98 | 7,996 | Standard OpenVINO |
 | ONNX CPU | 0.98 | 8,508 | CPU baseline |
 
-### 💡 Key Optimization Breakthroughs
+### 💡 Key Optimization Findings
 
 #### GPU Optimizations
 The **Custom TensorRT V2** configuration achieved a **98% throughput increase** over baseline ONNX GPU by simply increasing the `max_workspace_size_bytes` from 3GB to 8GB, demonstrating the critical impact of TensorRT memory allocation optimization.
